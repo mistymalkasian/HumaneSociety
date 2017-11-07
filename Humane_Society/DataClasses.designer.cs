@@ -33,6 +33,9 @@ namespace Humane_Society
     partial void InsertAnimal(Animal instance);
     partial void UpdateAnimal(Animal instance);
     partial void DeleteAnimal(Animal instance);
+    partial void InsertPaymentAccount(PaymentAccount instance);
+    partial void UpdatePaymentAccount(PaymentAccount instance);
+    partial void DeletePaymentAccount(PaymentAccount instance);
     #endregion
 		
 		public DataClassesDataContext() : 
@@ -70,6 +73,14 @@ namespace Humane_Society
 			get
 			{
 				return this.GetTable<Animal>();
+			}
+		}
+		
+		public System.Data.Linq.Table<PaymentAccount> PaymentAccounts
+		{
+			get
+			{
+				return this.GetTable<PaymentAccount>();
 			}
 		}
 	}
@@ -303,6 +314,116 @@ namespace Humane_Society
 					this._FoodAmountPerWeek = value;
 					this.SendPropertyChanged("FoodAmountPerWeek");
 					this.OnFoodAmountPerWeekChanged();
+				}
+			}
+		}
+		
+		public event PropertyChangingEventHandler PropertyChanging;
+		
+		public event PropertyChangedEventHandler PropertyChanged;
+		
+		protected virtual void SendPropertyChanging()
+		{
+			if ((this.PropertyChanging != null))
+			{
+				this.PropertyChanging(this, emptyChangingEventArgs);
+			}
+		}
+		
+		protected virtual void SendPropertyChanged(String propertyName)
+		{
+			if ((this.PropertyChanged != null))
+			{
+				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
+			}
+		}
+	}
+	
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.PaymentAccounts")]
+	public partial class PaymentAccount : INotifyPropertyChanging, INotifyPropertyChanged
+	{
+		
+		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
+		
+		private string _AdopterName;
+		
+		private System.Nullable<decimal> _MoneyOwed;
+		
+		private System.Nullable<decimal> _MoneyPaid;
+		
+    #region Extensibility Method Definitions
+    partial void OnLoaded();
+    partial void OnValidate(System.Data.Linq.ChangeAction action);
+    partial void OnCreated();
+    partial void OnAdopterNameChanging(string value);
+    partial void OnAdopterNameChanged();
+    partial void OnMoneyOwedChanging(System.Nullable<decimal> value);
+    partial void OnMoneyOwedChanged();
+    partial void OnMoneyPaidChanging(System.Nullable<decimal> value);
+    partial void OnMoneyPaidChanged();
+    #endregion
+		
+		public PaymentAccount()
+		{
+			OnCreated();
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_AdopterName", DbType="VarChar(50) NOT NULL", CanBeNull=false, IsPrimaryKey=true)]
+		public string AdopterName
+		{
+			get
+			{
+				return this._AdopterName;
+			}
+			set
+			{
+				if ((this._AdopterName != value))
+				{
+					this.OnAdopterNameChanging(value);
+					this.SendPropertyChanging();
+					this._AdopterName = value;
+					this.SendPropertyChanged("AdopterName");
+					this.OnAdopterNameChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_MoneyOwed", DbType="Money")]
+		public System.Nullable<decimal> MoneyOwed
+		{
+			get
+			{
+				return this._MoneyOwed;
+			}
+			set
+			{
+				if ((this._MoneyOwed != value))
+				{
+					this.OnMoneyOwedChanging(value);
+					this.SendPropertyChanging();
+					this._MoneyOwed = value;
+					this.SendPropertyChanged("MoneyOwed");
+					this.OnMoneyOwedChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_MoneyPaid", DbType="Money")]
+		public System.Nullable<decimal> MoneyPaid
+		{
+			get
+			{
+				return this._MoneyPaid;
+			}
+			set
+			{
+				if ((this._MoneyPaid != value))
+				{
+					this.OnMoneyPaidChanging(value);
+					this.SendPropertyChanging();
+					this._MoneyPaid = value;
+					this.SendPropertyChanged("MoneyPaid");
+					this.OnMoneyPaidChanged();
 				}
 			}
 		}
