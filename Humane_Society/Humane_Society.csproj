@@ -60,6 +60,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="EmployeeDatabaseDisplay.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="EmployeeInterface.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -79,6 +83,9 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>DataClasses.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="EmployeeDatabaseDisplay.xaml.cs">
+      <DependentUpon>EmployeeDatabaseDisplay.xaml</DependentUpon>
     </Compile>
     <Compile Include="EmployeeInterface.xaml.cs">
       <DependentUpon>EmployeeInterface.xaml</DependentUpon>

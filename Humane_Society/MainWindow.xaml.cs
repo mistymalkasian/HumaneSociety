@@ -20,17 +20,24 @@ namespace Humane_Society
     /// </summary>
     public partial class MainWindow : Window
     {
-        DataClassesDataContext DC = new DataClassesDataContext(Properties.Settings.Default.HumaneSocietyConnectionString);
+        
         public MainWindow()
         {
             InitializeComponent();
 
-            if (DC.DatabaseExists()) AnimalsDatagrid.ItemsSource = DC.Animals;
         }
 
-        private void SaveButton_Click(object sender, RoutedEventArgs e)
+        
+        private void EmployeeButton_Click(object sender, RoutedEventArgs e)
         {
-            DC.SubmitChanges();
+            EmployeeInterface EmployeeInterface = new EmployeeInterface();
+            EmployeeInterface.Show();
+        }
+
+        private void AdopterButton_Click(object sender, RoutedEventArgs e)
+        {
+            AdopterInterface AdopterInterface = new AdopterInterface();
+            AdopterInterface.Show();
         }
     }
 }

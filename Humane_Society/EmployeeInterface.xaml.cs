@@ -23,5 +23,16 @@ namespace Humane_Society
         {
             InitializeComponent();
         }
+
+        private void Database_Button_Click(object sender, RoutedEventArgs e)
+        {
+            EmployeeDatabaseDisplay OpenWindow = new EmployeeDatabaseDisplay();
+            OpenWindow.Show();
+        }
+
+        private void Payments_Button_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

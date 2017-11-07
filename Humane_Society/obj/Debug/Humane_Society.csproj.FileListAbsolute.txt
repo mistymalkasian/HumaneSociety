@@ -30,3 +30,5 @@ C:\Users\Andrew Malkasian\Documents\Visual Studio 2015\Projects\HumaneSociety\Hu
 C:\Users\Andrew Malkasian\Documents\Visual Studio 2015\Projects\HumaneSociety\Humane_Society\obj\Debug\EmployeeInterface.g.cs
 C:\Users\Andrew Malkasian\Documents\Visual Studio 2015\Projects\HumaneSociety\Humane_Society\obj\Debug\AdopterInterface.baml
 C:\Users\Andrew Malkasian\Documents\Visual Studio 2015\Projects\HumaneSociety\Humane_Society\obj\Debug\EmployeeInterface.baml
+C:\Users\Andrew Malkasian\Documents\Visual Studio 2015\Projects\HumaneSociety\Humane_Society\obj\Debug\EmployeeDatabaseDisplay.g.cs
+C:\Users\Andrew Malkasian\Documents\Visual Studio 2015\Projects\HumaneSociety\Humane_Society\obj\Debug\EmployeeDatabaseDisplay.baml

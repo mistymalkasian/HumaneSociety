@@ -19,9 +19,19 @@ namespace Humane_Society
     /// </summary>
     public partial class EmployeeDatabaseDisplay : Window
     {
+        DataClassesDataContext DC = new DataClassesDataContext(Properties.Settings.Default.HumaneSocietyConnectionString);
         public EmployeeDatabaseDisplay()
         {
             InitializeComponent();
+
+            if (DC.DatabaseExists()) AnimalsDatagrid.ItemsSource = DC.Animals;
+       }
+
+        private void SaveButton_Click(object sender, RoutedEventArgs e)
+        {
+            DC.SubmitChanges();
         }
+        
     }
+
 }
