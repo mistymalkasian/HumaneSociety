@@ -7,6 +7,6 @@
         mc:Ignorable="d"
         Title="EmployeePaymentsDisplay" Height="300" Width="300">
     <Grid>
-        
+        <DataGrid Name="PaymentsDatagrid" Margin="0,10,-1,0" RenderTransformOrigin="0.486,0.484" Height="178" VerticalAlignment="Top"></DataGrid> 
     </Grid>
 </Window>

@@ -26,13 +26,14 @@ namespace Humane_Society
 
         private void Database_Button_Click(object sender, RoutedEventArgs e)
         {
-            EmployeeDatabaseDisplay OpenWindow = new EmployeeDatabaseDisplay();
-            OpenWindow.Show();
+            EmployeeDatabaseDisplay DatabaseDisplay = new EmployeeDatabaseDisplay();
+            DatabaseDisplay.Show();
         }
 
         private void Payments_Button_Click(object sender, RoutedEventArgs e)
         {
-
+            EmployeePaymentsDisplay PaymentDisplay = new EmployeePaymentsDisplay();
+            PaymentDisplay.Show();
         }
     }
 }

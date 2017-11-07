@@ -13,4 +13,11 @@
       <Column Name="FoodAmountPerWeek" Type="System.Int32" DbType="Int" CanBeNull="true" />
     </Type>
   </Table>
+  <Table Name="dbo.PaymentAccounts" Member="PaymentAccounts">
+    <Type Name="PaymentAccount">
+      <Column Name="AdopterName" Type="System.String" DbType="VarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="MoneyOwed" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="MoneyPaid" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+    </Type>
+  </Table>
 </Database>

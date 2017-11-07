@@ -28,5 +28,11 @@ namespace Humane_Society
         {
 
         }
+
+        private void PaymentButton_Click(object sender, RoutedEventArgs e)
+        {
+            EmployeePaymentsDisplay MakePayment = new EmployeePaymentsDisplay();
+            MakePayment.Show();
+        }
     }
 }
