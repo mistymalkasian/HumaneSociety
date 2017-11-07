@@ -12,3 +12,17 @@ c:\users\andrew malkasian\documents\visual studio 2015\Projects\Humane_Society\H
 c:\users\andrew malkasian\documents\visual studio 2015\Projects\Humane_Society\Humane_Society\obj\Debug\Humane_Society.csproj.GenerateResource.Cache
 c:\users\andrew malkasian\documents\visual studio 2015\Projects\Humane_Society\Humane_Society\obj\Debug\Humane_Society.exe
 c:\users\andrew malkasian\documents\visual studio 2015\Projects\Humane_Society\Humane_Society\obj\Debug\Humane_Society.pdb
+C:\Users\Andrew Malkasian\Documents\Visual Studio 2015\Projects\HumaneSociety\Humane_Society\bin\Debug\Humane_Society.exe.config
+C:\Users\Andrew Malkasian\Documents\Visual Studio 2015\Projects\HumaneSociety\Humane_Society\obj\Debug\Humane_Society.exe
+C:\Users\Andrew Malkasian\Documents\Visual Studio 2015\Projects\HumaneSociety\Humane_Society\obj\Debug\Humane_Society.pdb
+C:\Users\Andrew Malkasian\Documents\Visual Studio 2015\Projects\HumaneSociety\Humane_Society\bin\Debug\Humane_Society.exe
+C:\Users\Andrew Malkasian\Documents\Visual Studio 2015\Projects\HumaneSociety\Humane_Society\bin\Debug\Humane_Society.pdb
+C:\Users\Andrew Malkasian\Documents\Visual Studio 2015\Projects\HumaneSociety\Humane_Society\obj\Debug\Humane_Society.csprojResolveAssemblyReference.cache
+C:\Users\Andrew Malkasian\Documents\Visual Studio 2015\Projects\HumaneSociety\Humane_Society\obj\Debug\MainWindow.g.cs
+C:\Users\Andrew Malkasian\Documents\Visual Studio 2015\Projects\HumaneSociety\Humane_Society\obj\Debug\App.g.cs
+C:\Users\Andrew Malkasian\Documents\Visual Studio 2015\Projects\HumaneSociety\Humane_Society\obj\Debug\Humane_Society_MarkupCompile.cache
+C:\Users\Andrew Malkasian\Documents\Visual Studio 2015\Projects\HumaneSociety\Humane_Society\obj\Debug\Humane_Society_MarkupCompile.lref
+C:\Users\Andrew Malkasian\Documents\Visual Studio 2015\Projects\HumaneSociety\Humane_Society\obj\Debug\MainWindow.baml
+C:\Users\Andrew Malkasian\Documents\Visual Studio 2015\Projects\HumaneSociety\Humane_Society\obj\Debug\Humane_Society.g.resources
+C:\Users\Andrew Malkasian\Documents\Visual Studio 2015\Projects\HumaneSociety\Humane_Society\obj\Debug\Humane_Society.Properties.Resources.resources
+C:\Users\Andrew Malkasian\Documents\Visual Studio 2015\Projects\HumaneSociety\Humane_Society\obj\Debug\Humane_Society.csproj.GenerateResource.Cache
