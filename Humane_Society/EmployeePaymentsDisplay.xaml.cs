@@ -32,5 +32,10 @@ namespace Humane_Society
         {
             dc.SubmitChanges();
         }
+
+        private void PaymentButton_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

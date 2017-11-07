@@ -5,11 +5,12 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Humane_Society"
         mc:Ignorable="d"
-        Title="AdopterInterface" Height="300" Width="300">
+        Title="AdopterInterface" Height="300" Width="300" 
+        ResizeMode="CanResize" SizeToContent="WidthAndHeight">
     <Grid>
         <DataGrid Name="AdopterGrid" Margin="10,0,16.6,76.4" Height="184" VerticalAlignment="Bottom" RenderTransformOrigin="0.608,0.548"></DataGrid>
         <Button Name="SearchButton"  Content="Search for a Pet" Click ="SearchButton_Click" Margin="10,236,177.6,10.4"></Button>
-        <Button Name ="PaymentButton" Content="Pay Adoption Fee" Click="PaymentButton_Click" HorizontalAlignment="Left" Margin="180,236,0,0" VerticalAlignment="Top" Width="97" Height="24"/>
+        <Button Name ="PaymentButton" Content="Pay Adoption Fee" Click="PaymentButton_Click" Margin="171,236,16.6,10.4" />
 
     </Grid>
 </Window>
