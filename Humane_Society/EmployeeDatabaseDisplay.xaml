@@ -1,14 +1,13 @@
-﻿<Window x:Class="Humane_Society.AdopterInterface"
+﻿<Window x:Class="Humane_Society.EmployeeDatabaseDisplay"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Humane_Society"
         mc:Ignorable="d"
-        Title="AdopterInterface" Height="300" Width="300">
+        Title="EmployeeDatabaseDisplay" Height="300" Width="300">
     <Grid>
-        <DataGrid Name="AdopterGrid" Margin="10,0,16.6,76.4" Height="184" VerticalAlignment="Bottom" RenderTransformOrigin="0.608,0.548"></DataGrid>
-        <Button Name="SearchButton" Click ="SearchButton_Click" Content="Search for a Pet" Margin="10,236,177.6,10.4"></Button>
-        
+        <DataGrid Name="AnimalsDatagrid" Margin="0,10,-0.4,83.4" RenderTransformOrigin="0.486,0.484"></DataGrid>
+        <Button Name="SaveButton" Click="SaveButton_Click" Content="Save Changes" Margin="223,0,250.2,23.8" Height="38" VerticalAlignment="Bottom"></Button>
     </Grid>
 </Window>

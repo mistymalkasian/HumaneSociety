@@ -15,18 +15,13 @@ using System.Windows.Shapes;
 namespace Humane_Society
 {
     /// <summary>
-    /// Interaction logic for AdopterInterface.xaml
+    /// Interaction logic for EmployeeDatabaseDisplay.xaml
     /// </summary>
-    public partial class AdopterInterface : Window
+    public partial class EmployeeDatabaseDisplay : Window
     {
-        public AdopterInterface()
+        public EmployeeDatabaseDisplay()
         {
             InitializeComponent();
-        }
-
-        private void SearchButton_Click(object sender, RoutedEventArgs e)
-        {
-
         }
     }
 }

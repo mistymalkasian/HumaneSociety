@@ -5,9 +5,12 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Humane_Society"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="665.487">
+        Title="Humane Society Homepage" Height="350" Width="665.487">
     <Grid>
-        <DataGrid Name="AnimalsDatagrid" Margin="0,0,0.2,37.8"></DataGrid>
-        <Button Name="SaveButton" Click="SaveButton_Click" Content="Save Changes" Margin="0,0,0.4,-0.2" Height="38" VerticalAlignment="Bottom"></Button>
+        <TextBlock HorizontalAlignment="Left" Margin="179,196,0,0" TextWrapping="Wrap" Text="Welcome! Please sign in using one of the buttons below." VerticalAlignment="Top" Height="58" Width="336"/>
+        <Button Content="Employee" Click="EmployeeButton_Click" HorizontalAlignment="Left" Margin="169,277,0,0" VerticalAlignment="Top" Width="91" Height="29"/>
+        <Button Content="Adopter" Click="AdopterButton_Click" HorizontalAlignment="Left" Margin="412,277,0,0" VerticalAlignment="Top" Width="79" Height="29"/>
+        <Label Content="Humane Society" HorizontalAlignment="Left" Margin="266,80,0,0" VerticalAlignment="Top" Height="30" Width="102" RenderTransformOrigin="0.497,0.55"/>
+
     </Grid>
 </Window>

@@ -56,10 +56,21 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Page Include="AdopterInterface.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="EmployeeInterface.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
+    <Compile Include="AdopterInterface.xaml.cs">
+      <DependentUpon>AdopterInterface.xaml</DependentUpon>
+    </Compile>
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
@@ -68,6 +79,9 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>DataClasses.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="EmployeeInterface.xaml.cs">
+      <DependentUpon>EmployeeInterface.xaml</DependentUpon>
     </Compile>
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
