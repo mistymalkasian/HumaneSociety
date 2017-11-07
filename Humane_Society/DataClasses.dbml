@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="HumaneSociety" Class="DataClassesDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=localhost;Initial Catalog=HumaneSociety;Integrated Security=True" SettingsObjectName="Humane_Society.Properties.Settings" SettingsPropertyName="HumaneSocietyConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.Animals" Member="Animals">
+    <Type Name="Animal">
+      <Column Name="AnimalName" Type="System.String" DbType="VarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="AnimalType" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="AnimalBreed" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="VaccinatedYN" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="AdoptedYN" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="AdoptionFee" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="Room#" Member="Room_" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="FoodType" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="FoodAmountPerWeek" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>
