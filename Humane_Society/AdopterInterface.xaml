@@ -5,12 +5,11 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Humane_Society"
         mc:Ignorable="d"
-        Title="AdopterInterface" Height="300" Width="300" 
-        ResizeMode="CanResize" SizeToContent="WidthAndHeight">
+        Title="AdopterInterface" Height="350" Width="665.487" WindowStartupLocation="CenterScreen">
     <Grid>
-        <Button Name="SearchButton"  Content="Search for a Pet" Click ="SearchButton_Click" Margin="10,180,177.6,61.4"></Button>
-        <Button Name ="PaymentButton" Content="Pay Adoption Fee" Click="PaymentButton_Click" Margin="178,180,9.6,61.4" />
-        <TextBlock HorizontalAlignment="Left" Margin="25,25,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="155" Width="238"><Run Text="Welcome! Here you can search our"/><LineBreak/><Run Text="extensive database for a pet to suit your individual needs. "/><LineBreak/><Run Text="You can also take care of your "/><LineBreak/><Run Text="adoption fee in advance, or fill out a profile to give the Humane Society more information about you!"/></TextBlock>
-        <Button Name = "ProfileButton" Content="Fill Out Profile" Click="ProfileButton_Click" HorizontalAlignment="Left" Margin="98,234,0,0" VerticalAlignment="Top" Width="101" Height="26"/>
+        <Button Name="SearchButton"  Content="Search for a Pet" Click ="SearchButton_Click" Margin="236,224,259.2,52.8"></Button>
+        <Button Name ="PaymentButton" Content="Pay Adoption Fee" Click="PaymentButton_Click" Margin="461,224,31.2,52.8" />
+        <TextBlock HorizontalAlignment="Left" Margin="116,104,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="72" Width="408"><Run Text="Welcome! Here you can search our extensive database for a pet to suit your individual needs. "/><LineBreak/><Run Text="You can also take care of the adoption fee, or fill out a profile to give the Humane Society more information about you!"/></TextBlock>
+        <Button Name = "ProfileButton" Content="Fill Out Profile" Click="ProfileButton_Click" HorizontalAlignment="Left" Margin="30,224,0,0" VerticalAlignment="Top" Width="151" Height="36"/>
     </Grid>
 </Window>

@@ -5,17 +5,17 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Humane_Society"
         mc:Ignorable="d"
-        Title="EmployeePaymentsDisplay" Height="300" Width="300"
-        ResizeMode="CanResize" SizeToContent="WidthAndHeight">
-        
+        Title="EmployeePaymentsDisplay" Height="350" Width="665.487" WindowStartupLocation="CenterScreen"
+        ResizeMode="CanResize">
+
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="0*"/>
             <ColumnDefinition/>
             <ColumnDefinition Width="48*"/>
         </Grid.ColumnDefinitions>
-        <DataGrid Name="PaymentsDatagrid" Margin="0,74,-1.4,0" RenderTransformOrigin="0.486,0.484" Height="146" VerticalAlignment="Top" Grid.ColumnSpan="3"></DataGrid>
-        <Button Name="PaymentButton" Content="Save Payment" Click="SaveButton_Click" HorizontalAlignment="Left" Margin="103.977,233,0,0" VerticalAlignment="Top" Width="75" Grid.Column="2"/>
-        <Label Content="If you'd like to make a payment,&#xD;&#xA;please enter your payment amount&#xD;&#xA;next to your name and press 'Save Payment'." HorizontalAlignment="Left" Margin="16.977,10,0,0" VerticalAlignment="Top" Height="64" Width="247" Grid.Column="2"/>
+        <DataGrid Name="PaymentsDatagrid" Margin="0,82,-1.8,0" RenderTransformOrigin="0.486,0.484" Height="146" VerticalAlignment="Top" Grid.ColumnSpan="3"></DataGrid>
+        <Button Name="PaymentButton" Content="Save Payment" Click="SaveButton_Click" HorizontalAlignment="Left" Margin="248.4,241,0,0" VerticalAlignment="Top" Width="118" Grid.Column="2" Height="39"/>
+        <Label Content="If you'd like to make a payment,&#xD;&#xA;please enter your payment amount&#xD;&#xA;next to your name and press 'Save Payment'." HorizontalAlignment="Left" Margin="203.4,18,0,0" VerticalAlignment="Top" Height="64" Width="247" Grid.Column="2"/>
     </Grid>
 </Window>

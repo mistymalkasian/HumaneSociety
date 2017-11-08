@@ -14,7 +14,6 @@ using System.Windows.Shapes;
 using System.Data.SqlClient;
 using System.Data;
 
-
 namespace Humane_Society
 {
     /// <summary>
@@ -22,14 +21,10 @@ namespace Humane_Society
     /// </summary>
     public partial class AnimalSearchDisplay : Window
     {
-
-        //SqlConnection sqlconnection;
-        SqlCommand sqlcommand;
-        string Query;
-        DataSet dataset;
-        DataTable datatable;
-        SqlDataAdapter sqladapter;
         DataClassesDataContext dc = new DataClassesDataContext(Properties.Settings.Default.HumaneSocietyConnectionString);
+
+        SqlDataAdapter AnimalDatagrid = new SqlDataAdapter();
+        
 
         public AnimalSearchDisplay()
         {
@@ -42,6 +37,34 @@ namespace Humane_Society
         private void SearchButton_Click(object sender, RoutedEventArgs e)
         {
             MessageBox.Show(this.inputText.Text);
+        }
+
+        private void inputText_TextChanged(object sender, TextChangedEventArgs e)
+        {
+         
+            //var query = from a in dc.Animals
+            //            orderby a.AnimalType
+            //            select a;
+
+            //dataListBox.ItemsSource = query.ToList();
+        }
+
+        private void inputText2_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            //ICollectionView view =
+            //       CollectionViewSource.GetDefaultView(dataListBox.ItemsSource);
+            //view.Filter = m =>
+            //   ((Song)m).Name.ToLower().Contains(filterBox.Text.ToLower());
+        }
+
+        private void inputText3_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
+
+        private void inputText4_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
         }
     }
 }
