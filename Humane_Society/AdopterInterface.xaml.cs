@@ -30,19 +30,20 @@ namespace Humane_Society
 
         private void SearchButton_Click(object sender, RoutedEventArgs e)
         {
-
+            AnimalSearchDisplay AnimalSearch = new AnimalSearchDisplay();
+            AnimalSearch.Show();
         }
 
         private void PaymentButton_Click(object sender, RoutedEventArgs e)
         {
-            EmployeePaymentsDisplay MakePayment = new EmployeePaymentsDisplay();
-            MakePayment.Show();
+            EmployeePaymentsDisplay PaymentView = new EmployeePaymentsDisplay();
+           PaymentView.Show();
         }
 
         private void ProfileButton_Click(object sender, RoutedEventArgs e)
         {
-            UserProfileDatabaseDisplay DatabaseDisplay = new UserProfileDatabaseDisplay();
-            DatabaseDisplay.Show();
+            UserProfileDatabaseDisplay UserProfile = new UserProfileDatabaseDisplay();
+            UserProfile.Show();
         }
     }
 }

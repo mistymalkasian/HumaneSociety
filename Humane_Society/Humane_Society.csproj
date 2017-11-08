@@ -56,10 +56,17 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="AnimalSearchDisplay.xaml.cs">
+      <DependentUpon>AnimalSearchDisplay.xaml</DependentUpon>
+    </Compile>
     <Compile Include="UserProfileDatabaseDisplay.xaml.cs">
       <DependentUpon>UserProfileDatabaseDisplay.xaml</DependentUpon>
     </Compile>
     <Page Include="AdopterInterface.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="AnimalSearchDisplay.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

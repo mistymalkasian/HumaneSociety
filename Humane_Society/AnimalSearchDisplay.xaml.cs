@@ -11,31 +11,37 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using System.Data.SqlClient;
+using System.Data;
+
 
 namespace Humane_Society
 {
     /// <summary>
-    /// Interaction logic for EmployeePaymentsDisplay.xaml
+    /// Interaction logic for AnimalSearchDisplay.xaml
     /// </summary>
-    public partial class EmployeePaymentsDisplay : Window
+    public partial class AnimalSearchDisplay : Window
     {
+
+        //SqlConnection sqlconnection;
+        SqlCommand sqlcommand;
+        string Query;
+        DataSet dataset;
+        DataTable datatable;
+        SqlDataAdapter sqladapter;
         DataClassesDataContext dc = new DataClassesDataContext(Properties.Settings.Default.HumaneSocietyConnectionString);
 
-        public EmployeePaymentsDisplay()
+        public AnimalSearchDisplay()
         {
             InitializeComponent();
 
-            if (dc.DatabaseExists()) PaymentsDatagrid.ItemsSource = dc.PaymentAccounts;
+            if (dc.DatabaseExists()) SearchDatagrid.ItemsSource = dc.Animals;
         }
 
-        private void SaveButton_Click(object sender, RoutedEventArgs e)
-        {
-            dc.SubmitChanges();
-        }
 
-        private void PaymentButton_Click(object sender, RoutedEventArgs e)
+        private void SearchButton_Click(object sender, RoutedEventArgs e)
         {
-            dc.SubmitChanges();
+            MessageBox.Show(this.inputText.Text);
         }
     }
 }
