@@ -19,9 +19,13 @@ namespace Humane_Society
     /// </summary>
     public partial class AdopterInterface : Window
     {
+       
+
         public AdopterInterface()
         {
             InitializeComponent();
+
+                    
         }
 
         private void SearchButton_Click(object sender, RoutedEventArgs e)
@@ -33,6 +37,12 @@ namespace Humane_Society
         {
             EmployeePaymentsDisplay MakePayment = new EmployeePaymentsDisplay();
             MakePayment.Show();
+        }
+
+        private void ProfileButton_Click(object sender, RoutedEventArgs e)
+        {
+            UserProfileDatabaseDisplay DatabaseDisplay = new UserProfileDatabaseDisplay();
+            DatabaseDisplay.Show();
         }
     }
 }

@@ -1,0 +1,13 @@
+﻿<Window x:Class="Humane_Society.UserProfileDatabaseDisplay"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Humane_Society"
+        mc:Ignorable="d"
+        Title="UserProfileDatabaseDisplay" Height="300" Width="300">
+    <Grid>
+        <DataGrid Name="UserProfileDatagrid" Margin="-1,75,-0.4,0" RenderTransformOrigin="0.486,0.484" Height="178" VerticalAlignment="Top"></DataGrid>
+        <TextBlock HorizontalAlignment="Left" Margin="33,18,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="52" Width="211" Text="Please fill in the fields below with your information."/>
+    </Grid>
+</Window>

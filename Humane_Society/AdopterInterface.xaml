@@ -8,9 +8,9 @@
         Title="AdopterInterface" Height="300" Width="300" 
         ResizeMode="CanResize" SizeToContent="WidthAndHeight">
     <Grid>
-        <DataGrid Name="AdopterGrid" Margin="10,0,16.6,76.4" Height="184" VerticalAlignment="Bottom" RenderTransformOrigin="0.608,0.548"></DataGrid>
-        <Button Name="SearchButton"  Content="Search for a Pet" Click ="SearchButton_Click" Margin="10,236,177.6,10.4"></Button>
-        <Button Name ="PaymentButton" Content="Pay Adoption Fee" Click="PaymentButton_Click" Margin="171,236,16.6,10.4" />
-
+        <Button Name="SearchButton"  Content="Search for a Pet" Click ="SearchButton_Click" Margin="10,180,177.6,61.4"></Button>
+        <Button Name ="PaymentButton" Content="Pay Adoption Fee" Click="PaymentButton_Click" Margin="178,180,9.6,61.4" />
+        <TextBlock HorizontalAlignment="Left" Margin="25,25,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="155" Width="238"><Run Text="Welcome! Here you can search our"/><LineBreak/><Run Text="extensive database for a pet to suit your individual needs. "/><LineBreak/><Run Text="You can also take care of your "/><LineBreak/><Run Text="adoption fee in advance, or fill out a profile to give the Humane Society more information about you!"/></TextBlock>
+        <Button Name = "ProfileButton" Content="Fill Out Profile" Click="ProfileButton_Click" HorizontalAlignment="Left" Margin="98,234,0,0" VerticalAlignment="Top" Width="101" Height="26"/>
     </Grid>
 </Window>

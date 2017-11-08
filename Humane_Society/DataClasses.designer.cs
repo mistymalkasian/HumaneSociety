@@ -36,6 +36,9 @@ namespace Humane_Society
     partial void InsertPaymentAccount(PaymentAccount instance);
     partial void UpdatePaymentAccount(PaymentAccount instance);
     partial void DeletePaymentAccount(PaymentAccount instance);
+    partial void InsertUserInfo(UserInfo instance);
+    partial void UpdateUserInfo(UserInfo instance);
+    partial void DeleteUserInfo(UserInfo instance);
     #endregion
 		
 		public DataClassesDataContext() : 
@@ -81,6 +84,14 @@ namespace Humane_Society
 			get
 			{
 				return this.GetTable<PaymentAccount>();
+			}
+		}
+		
+		public System.Data.Linq.Table<UserInfo> UserInfos
+		{
+			get
+			{
+				return this.GetTable<UserInfo>();
 			}
 		}
 	}
@@ -424,6 +435,140 @@ namespace Humane_Society
 					this._MoneyPaid = value;
 					this.SendPropertyChanged("MoneyPaid");
 					this.OnMoneyPaidChanged();
+				}
+			}
+		}
+		
+		public event PropertyChangingEventHandler PropertyChanging;
+		
+		public event PropertyChangedEventHandler PropertyChanged;
+		
+		protected virtual void SendPropertyChanging()
+		{
+			if ((this.PropertyChanging != null))
+			{
+				this.PropertyChanging(this, emptyChangingEventArgs);
+			}
+		}
+		
+		protected virtual void SendPropertyChanged(String propertyName)
+		{
+			if ((this.PropertyChanged != null))
+			{
+				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
+			}
+		}
+	}
+	
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.UserInfo")]
+	public partial class UserInfo : INotifyPropertyChanging, INotifyPropertyChanged
+	{
+		
+		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
+		
+		private string _UserName;
+		
+		private string _UserAddress;
+		
+		private string _UserEmail;
+		
+		private System.Nullable<System.DateTime> _UserDOB;
+		
+    #region Extensibility Method Definitions
+    partial void OnLoaded();
+    partial void OnValidate(System.Data.Linq.ChangeAction action);
+    partial void OnCreated();
+    partial void OnUserNameChanging(string value);
+    partial void OnUserNameChanged();
+    partial void OnUserAddressChanging(string value);
+    partial void OnUserAddressChanged();
+    partial void OnUserEmailChanging(string value);
+    partial void OnUserEmailChanged();
+    partial void OnUserDOBChanging(System.Nullable<System.DateTime> value);
+    partial void OnUserDOBChanged();
+    #endregion
+		
+		public UserInfo()
+		{
+			OnCreated();
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_UserName", DbType="VarChar(50) NOT NULL", CanBeNull=false, IsPrimaryKey=true)]
+		public string UserName
+		{
+			get
+			{
+				return this._UserName;
+			}
+			set
+			{
+				if ((this._UserName != value))
+				{
+					this.OnUserNameChanging(value);
+					this.SendPropertyChanging();
+					this._UserName = value;
+					this.SendPropertyChanged("UserName");
+					this.OnUserNameChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_UserAddress", DbType="VarChar(MAX)")]
+		public string UserAddress
+		{
+			get
+			{
+				return this._UserAddress;
+			}
+			set
+			{
+				if ((this._UserAddress != value))
+				{
+					this.OnUserAddressChanging(value);
+					this.SendPropertyChanging();
+					this._UserAddress = value;
+					this.SendPropertyChanged("UserAddress");
+					this.OnUserAddressChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_UserEmail", DbType="VarChar(50)")]
+		public string UserEmail
+		{
+			get
+			{
+				return this._UserEmail;
+			}
+			set
+			{
+				if ((this._UserEmail != value))
+				{
+					this.OnUserEmailChanging(value);
+					this.SendPropertyChanging();
+					this._UserEmail = value;
+					this.SendPropertyChanged("UserEmail");
+					this.OnUserEmailChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_UserDOB", DbType="Date")]
+		public System.Nullable<System.DateTime> UserDOB
+		{
+			get
+			{
+				return this._UserDOB;
+			}
+			set
+			{
+				if ((this._UserDOB != value))
+				{
+					this.OnUserDOBChanging(value);
+					this.SendPropertyChanging();
+					this._UserDOB = value;
+					this.SendPropertyChanged("UserDOB");
+					this.OnUserDOBChanged();
 				}
 			}
 		}
