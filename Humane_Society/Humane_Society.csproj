@@ -59,6 +59,9 @@
     <Compile Include="AnimalSearchDisplay.xaml.cs">
       <DependentUpon>AnimalSearchDisplay.xaml</DependentUpon>
     </Compile>
+    <Compile Include="ImportCSV.xaml.cs">
+      <DependentUpon>ImportCSV.xaml</DependentUpon>
+    </Compile>
     <Compile Include="UserProfileDatabaseDisplay.xaml.cs">
       <DependentUpon>UserProfileDatabaseDisplay.xaml</DependentUpon>
     </Compile>
@@ -79,6 +82,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="EmployeePaymentsDisplay.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ImportCSV.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

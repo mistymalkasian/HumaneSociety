@@ -23,9 +23,6 @@ namespace Humane_Society
     {
         DataClassesDataContext dc = new DataClassesDataContext(Properties.Settings.Default.HumaneSocietyConnectionString);
 
-        SqlDataAdapter AnimalDatagrid = new SqlDataAdapter();
-        
-
         public AnimalSearchDisplay()
         {
             InitializeComponent();
@@ -36,12 +33,13 @@ namespace Humane_Society
 
         private void SearchButton_Click(object sender, RoutedEventArgs e)
         {
-            MessageBox.Show(this.inputText.Text);
+            //MessageBox.Show();
         }
 
         private void inputText_TextChanged(object sender, TextChangedEventArgs e)
         {
-         
+            //ListBox dataListBox = new ListBox();
+
             //var query = from a in dc.Animals
             //            orderby a.AnimalType
             //            select a;
@@ -49,22 +47,6 @@ namespace Humane_Society
             //dataListBox.ItemsSource = query.ToList();
         }
 
-        private void inputText2_TextChanged(object sender, TextChangedEventArgs e)
-        {
-            //ICollectionView view =
-            //       CollectionViewSource.GetDefaultView(dataListBox.ItemsSource);
-            //view.Filter = m =>
-            //   ((Song)m).Name.ToLower().Contains(filterBox.Text.ToLower());
-        }
-
-        private void inputText3_TextChanged(object sender, TextChangedEventArgs e)
-        {
-
-        }
-
-        private void inputText4_TextChanged(object sender, TextChangedEventArgs e)
-        {
-
-        }
+      
     }
 }

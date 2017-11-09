@@ -39,5 +39,11 @@ namespace Humane_Society
             AdopterInterface AdopterInterface = new AdopterInterface();
             AdopterInterface.Show();
         }
+
+        private void CSVButton_Click(object sender, RoutedEventArgs e)
+        {
+            ImportCSV ImportCSV = new ImportCSV();
+            ImportCSV.Show();
+        }
     }
 }

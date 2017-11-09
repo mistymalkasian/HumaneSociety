@@ -27,5 +27,10 @@ namespace Humane_Society
 
             if (DC.DatabaseExists()) UserProfileDatagrid.ItemsSource = DC.UserInfos;
         }
+
+        private void SaveButton_Click(object sender, RoutedEventArgs e)
+        {
+            DC.SubmitChanges();
+        }
     }
 }

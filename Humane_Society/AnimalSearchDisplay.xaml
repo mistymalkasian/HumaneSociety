@@ -5,19 +5,9 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Humane_Society"
         mc:Ignorable="d"
-        Title="AnimalSearchDisplay" Height="675.581" Width="809.57" WindowStartupLocation="CenterScreen" >
-    <Window.Resources>
-        <DataTemplate x:Key="AnimalsTemplate">
-            <StackPanel>
-                <StackPanel Orientation="Horizontal">
-                    <TextBlock Text="{Binding Path=Name}" FontWeight="Bold" />
-                    <TextBlock Margin="5,0,0,0" Text="{Binding Path=AnimalName}"/>
-                </StackPanel>
-                <TextBlock Text="{Binding Path=AnimalType}" />
-            </StackPanel>
-        </DataTemplate>
-    </Window.Resources>
-    <Grid Margin="34,27,11.4,28.6">
+        Title="AnimalSearchDisplay" Height="675.581" Width="809.57" WindowStartupLocation="CenterScreen">
+
+    <Grid Margin="18,21,11.2,-0.4">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="715*"/>
             <ColumnDefinition Width="83*"/>
@@ -27,18 +17,8 @@
             <RowDefinition Height="17*"/>
             <RowDefinition Height="134*"/>
         </Grid.RowDefinitions>
-        <Button Content="Search" Name="RetrieveInput" Click="SearchButton_Click" HorizontalAlignment="Left" Margin="484,101.6,0,0" VerticalAlignment="Top" Width="75" Grid.Row="2" Height="19"/>
-        <DataGrid Name="SearchDatagrid" HorizontalAlignment="Left" Margin="109,81,0,0" VerticalAlignment="Top" Height="250" Width="535" Grid.RowSpan="3"/>
-       
-        <Label Content="Search by adoption fee:" HorizontalAlignment="Left" Margin="195,89.6,0,0" VerticalAlignment="Top" Height="31" Width="138" Grid.Row="2"/>
-        <Label Content="Here you can search our database&#xA;by multiple criteria, to find the perfect pet&#xA;for your needs!" HorizontalAlignment="Left" Margin="231,17,0,0" VerticalAlignment="Top" Width="260" Height="59"/>
-        <Label Content="Search by animal type:" HorizontalAlignment="Left" Margin="195,53.6,0,0" VerticalAlignment="Top" Height="31" Width="138" Grid.Row="2"/>
-        <Label Content="Search by animal name:" HorizontalAlignment="Left" Margin="195,22.6,0,0" VerticalAlignment="Top" Height="31" Width="138" Grid.Row="2"/>
-        <Label Content="Search by room #:" HorizontalAlignment="Left" Margin="195,120.6,0,0" VerticalAlignment="Top" Height="31" Width="138" Grid.Row="2"/>
-        <TextBox Name="inputText" TextChanged="inputText_TextChanged" HorizontalAlignment="Left" Height="31" Margin="346,89.2,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Grid.Row="2"/>
-        <TextBox Name="inputText2" TextChanged="inputText2_TextChanged" HorizontalAlignment="Left" Height="31" Margin="346,17.6,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Grid.Row="2"/>
-        <TextBox Name="inputText3" TextChanged="inputText3_TextChanged" HorizontalAlignment="Left" Height="31" Margin="346,52.6,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Grid.Row="2"/>
-        <TextBox Name="inputText4" TextChanged="inputText4_TextChanged" HorizontalAlignment="Left" Height="31" Margin="346,124.6,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Grid.Row="2"/>
-        <ListBox x:Name="listBox1" Margin="10" DisplayMemberPath="Name"/>
+        <DataGrid Name="SearchDatagrid" HorizontalAlignment="Left" Margin="20,193,0,-164.2" VerticalAlignment="Top" Height="380" Width="731" Grid.RowSpan="3" Grid.ColumnSpan="2"/>
+        <Label Content="Here you can search the database by clicking&#xD;&#xA;the filters at the top of the columns. This will &#xD;&#xA;sort the available pets alphabetically by name, &#xD;&#xA;type, etc.&#xA;We hope you find the perfect pet for your needs!" HorizontalAlignment="Left" Margin="214,73,0,0" VerticalAlignment="Top" Width="273" Height="105"/>
+
     </Grid>
 </Window>

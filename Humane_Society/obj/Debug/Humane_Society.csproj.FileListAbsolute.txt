@@ -38,3 +38,5 @@ C:\Users\Andrew Malkasian\Documents\Visual Studio 2015\Projects\HumaneSociety\Hu
 C:\Users\Andrew Malkasian\Documents\Visual Studio 2015\Projects\HumaneSociety\Humane_Society\obj\Debug\UserProfileDatabaseDisplay.baml
 C:\Users\Andrew Malkasian\Documents\Visual Studio 2015\Projects\HumaneSociety\Humane_Society\obj\Debug\AnimalSearchDisplay.g.cs
 C:\Users\Andrew Malkasian\Documents\Visual Studio 2015\Projects\HumaneSociety\Humane_Society\obj\Debug\AnimalSearchDisplay.baml
+C:\Users\Andrew Malkasian\Documents\Visual Studio 2015\Projects\HumaneSociety\Humane_Society\obj\Debug\ImportCSV.g.cs
+C:\Users\Andrew Malkasian\Documents\Visual Studio 2015\Projects\HumaneSociety\Humane_Society\obj\Debug\ImportCSV.baml

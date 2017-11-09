@@ -11,8 +11,8 @@
             <ColumnDefinition Width="122*"/>
             <ColumnDefinition Width="19*"/>
         </Grid.ColumnDefinitions>
-        <Button Content="Access Animal Database" Click="Database_Button_Click" HorizontalAlignment="Left" Height="37" Margin="76,204,0,-34" VerticalAlignment="Top" Width="141"/>
-        <Button Content="Check Payments" Click="Payments_Button_Click" HorizontalAlignment="Left" Height="37" Margin="476,204,0,-34" VerticalAlignment="Top" Width="101" Grid.ColumnSpan="2"/>
+        <Button Content="Access Animal Database" Click="Database_Button_Click" HorizontalAlignment="Left" Height="37" Margin="116,204,0,-34" VerticalAlignment="Top" Width="142"/>
+        <Button Content="Check Payments" Click="Payments_Button_Click" HorizontalAlignment="Left" Height="37" Margin="385,204,0,-34" VerticalAlignment="Top" Width="142"/>
         <TextBlock HorizontalAlignment="Left" Margin="214,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="181" Width="222"><Run Text="Welcome, Humane Society employee. "/><LineBreak/><Run Text="This application allows you to access a "/><LineBreak/><Run Text="database of the animals housed at the"/><LineBreak/><Run Text="Society, and make changes as necessary."/><LineBreak/><Run Text="Click the button on the left to access the "/><LineBreak/><Run Text="animal database. Click the button on the "/><LineBreak/><Run Text="right to check whether an adoption fee has been paid."/></TextBlock>
 
     </Grid>

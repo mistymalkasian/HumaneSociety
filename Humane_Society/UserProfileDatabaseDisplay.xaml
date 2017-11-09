@@ -9,5 +9,6 @@
     <Grid>
         <DataGrid Name="UserProfileDatagrid" Margin="-1,75,-0.4,0" RenderTransformOrigin="0.486,0.484" Height="178" VerticalAlignment="Top"></DataGrid>
         <TextBlock HorizontalAlignment="Left" Margin="33,18,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="52" Width="211" Text="Please fill in the fields below with your information."/>
+        <Button Content="Save" Click="SaveButton_Click" HorizontalAlignment="Left" Margin="266,270,0,0" VerticalAlignment="Top" Width="106" Height="30"/>
     </Grid>
 </Window>
